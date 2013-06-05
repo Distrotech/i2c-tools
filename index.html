@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>I2c-tools by Distrotech</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>I2c-tools</h1>
+          <h2>Mirror of http://lm-sensors.org/svn/i2c-tool</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/Distrotech/i2c-tools/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/Distrotech/i2c-tools/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/Distrotech/i2c-tools" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a name="i2c-tools-for-linux" class="anchor" href="#i2c-tools-for-linux"><span class="octicon octicon-link"></span></a>I2C TOOLS FOR LINUX</h1>
+
+<p>This package contains an heterogeneous set of I2C tools for the Linux kernel
+as well as an I2C library. The tools were originally part of the lm-sensors
+project but were finally split into their own package for convenience. The
+library is used by some of the tools, but can also be used by third-party
+applications. The tools and library compile, run and have been tested on
+GNU/Linux.</p>
+
+<p>The latest version of the code can be downloaded from:
+  <a href="http://www.lm-sensors.org/wiki/I2CTools">http://www.lm-sensors.org/wiki/I2CTools</a></p>
+
+<h2>
+<a name="contents" class="anchor" href="#contents"><span class="octicon octicon-link"></span></a>CONTENTS</h2>
+
+<p>The various tools included in this package are grouped by category, each
+category has its own sub-directory:</p>
+
+<ul>
+<li><p>eeprom
+Perl scripts for decoding different types of EEPROMs (SPD, EDID...) These
+scripts rely on the "eeprom" kernel driver. They are installed by default.</p></li>
+<li><p>eepromer
+Tools for writing to EEPROMs. These tools rely on the "i2c-dev" kernel
+driver. They are not installed by default.</p></li>
+<li><p>include
+C/C++ header files for I2C and SMBus access over i2c-dev. Installed by
+default.</p></li>
+<li><p>lib
+The I2C library, used by eepromer, py-smbus and tools. Installed by
+default.</p></li>
+<li><p>py-smbus
+Python wrapper for SMBus access over i2c-dev. Not installed by default.</p></li>
+<li><p>stub
+A helper script to use with the i2c-stub kernel driver. Installed by
+default.</p></li>
+<li><p>tools
+I2C device detection and register dump tools. These tools rely on the
+"i2c-dev" kernel driver. They are installed by default.</p></li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>LICENSE</h2>
+
+<p>Check the documentation of individual tools for licensing information.
+The library is released under the LGPL version 2.1 or later, while most
+tools are released under the GPL version 2 or later, but there are a few
+exceptions.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>INSTALLATION</h2>
+
+<p>There's no configure script, so simply run "make" to build the library and
+tools, and "make install" to install them. You also can use "make uninstall"
+to remove all the files you installed. By default, files are installed in
+/usr/local but you can change the location by editing the Makefile file and
+setting prefix to wherever you want. You may change the C compiler and the
+compilation flags as well, and also decide whether to build the static
+library or not.</p>
+
+<p>Optionally, you can run "make strip" prior to "make install" if you want
+smaller binaries. However, be aware that this will prevent any further
+attempt to debug the library and tools.</p>
+
+<p>If you wish to include sub-directories that are not enabled by default, then
+just set them via the EXTRA make variable. For example, to build py-smbus,
+do:
+  $ make EXTRA="py-smbus"</p>
+
+<h2>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>DOCUMENTATION</h2>
+
+<p>The main tools have manual pages, which are installed by "make install".
+See these manual pages for command line interface details and tool specific
+information.</p>
+
+<p>The other tools come with simple text documentation, which isn't installed.</p>
+
+<h2>
+<a name="questions-and-bug-reports" class="anchor" href="#questions-and-bug-reports"><span class="octicon octicon-link"></span></a>QUESTIONS AND BUG REPORTS</h2>
+
+<p>Please post your questions and bug reports to the linux-i2c mailing list:
+  <a href="mailto:linux-i2c@vger.kernel.org">linux-i2c@vger.kernel.org</a>
+For additional information about this list, see:
+  <a href="http://vger.kernel.org/vger-lists.html#linux-i2c">http://vger.kernel.org/vger-lists.html#linux-i2c</a></p>
+        </section>
+
+        <footer>
+          I2c-tools is maintained by <a href="https://github.com/Distrotech">Distrotech</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
