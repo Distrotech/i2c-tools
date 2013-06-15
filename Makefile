@@ -8,7 +8,7 @@
 # (at your option) any later version.
 
 DESTDIR	=
-prefix	= /usr/local
+prefix	= /usr
 bindir	= $(prefix)/bin
 sbindir	= $(prefix)/sbin
 mandir	= $(prefix)/share/man
