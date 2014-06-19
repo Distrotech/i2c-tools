@@ -13,6 +13,7 @@ i2c-tools CHANGES
                 Fix DDR3 tRAS decoding
                 Fix DDR3 core timings rounding
                 Round down PC3 numbers to comply with Jedec
+                Fix DDR3 extended temp range refresh rate decoding
                 Encode "degrees" to HTML degree symbol
                 Add a manual page
   decode-vaio: Add a manual page
