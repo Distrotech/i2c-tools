@@ -1,1 +1,1 @@
-#define VERSION "3.1.1+SVN"
+#define VERSION "3.1.2"
